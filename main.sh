@@ -13,9 +13,9 @@ unzip -o numpy_nearwall.zip -d dataset
 
 
 # Run training
-echo "Running training script on middle bos"
-python3 src/train.py configs/middle_boxfilter_4x_MultiScale.yaml
+echo "Running training script on midplane single box"
+python3 src/train.py configs/midplane_single_timestep_1_box.yaml
 
-echo "Running training script on nearwall box"
-python3 src/train.py configs/nearwall_boxfilter_4x_MultiScale.yaml
+echo "Running training script on boundary single box"
+python3 src/train.py configs/boundary_single_timestep_1_box.yaml
 
