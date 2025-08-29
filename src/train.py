@@ -16,7 +16,7 @@ from transformations import apply_octahedral_augmentation, apply_so3_augmentatio
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('config', type=str, help='Path to experiment config file')
-    parser.add_argument('--device', type=str, default='cuda:0', help='Device to use for training')
+    parser.add_argument('--device', type=str, default='cpu', help='Device to use for training')
     args = parser.parse_args()
     device = args.device
 
